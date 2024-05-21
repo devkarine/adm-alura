@@ -1,12 +1,8 @@
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import { IDados, useDadosGrafico } from './useDadosGrafico';
 import dataJson from '../../db.json';
-import { styled } from 'styled-components';
+import {SecaoEstilizada} from './style'
 
-const SecaoEstilizada = styled.section`
-  background-color: aliceblue;
-  border-radius: 16px;
-`;
 
 export const Grafico = () => {
   const { consultas, profissionais } = dataJson;
